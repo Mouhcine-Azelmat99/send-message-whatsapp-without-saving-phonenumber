@@ -62,9 +62,9 @@ input , button{
 
     }
     input{
-        padding: 10px 20px;
+        padding: 10px 60px !important;
         font-size: 1.5rem;
-        width: 67%;
+        width: 138% !important;
         background: linear-gradient(77deg, rgba(7,236,181,1) 0%, rgba(99,215,99,1) 100%);
         border: $open-green 1px $gren-dakr;
         box-shadow: $shadow;
@@ -76,13 +76,12 @@ input , button{
             font-size: 1.3rem;
         }
         &:focus{
-            transform: scale(1.1);
-            border: 2px solid #192a56;
+            background-color: #eeee !important;
         }
     }
     button{
         all: none;
-        width: 73.5%;
+        width: 80%;
         padding: 10px 20px;
         background: rgb(0,203,157);
         background: linear-gradient(77deg, rgba(0,203,157,1) 0%, rgba(76,209,55,1) 81%, rgba(60,241,31,1) 100%);
@@ -93,7 +92,6 @@ input , button{
         cursor: pointer;
         margin: 8px 0;
         border: 2px solid $dark-bleu;
-        transition: 2s ease-out !important;
         box-shadow: $shadow;
         &:hover{
             background: rgb(0,201,121);
@@ -119,6 +117,7 @@ footer{
 }
 
 @media (max-width: 767px) {
+
     nav a img{
         width:15%;
     }
@@ -127,6 +126,7 @@ footer{
     }
     .main {
         display: block;
+        margin-bottom: 40px;
         img{
             display: none;
         }
@@ -138,7 +138,7 @@ footer{
             margin-bottom: 0px;
         }
     input{
-        width: 85%;
+        width: 96% !important;
     }
     }
     #desc{
@@ -171,4 +171,17 @@ footer{
     .loader{
         padding: 41% 30%;
     }
+}
+@media (max-width: 400px) {
+    .main{
+        min-height: 73vh;
+    }
+    .loader{
+        padding: 73% 26%;
+    }
+}
+
+.main .iti--allow-dropdown .iti__selected-flag{
+    border-right: 1px solid #000;
+    padding: 0 6px 0 15px;
 }

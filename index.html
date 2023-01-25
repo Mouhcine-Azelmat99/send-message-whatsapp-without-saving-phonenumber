@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Send without saving number</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <link rel="stylesheet" href="./style/style.css">
+    <!-- <link rel="stylesheet" href="./style/build/css/demo.css"> -->
+    <link rel="stylesheet" href="./style/build/css/intlTelInput.min.css">
 </head>
 <body>
     <div class="loader">
@@ -22,7 +25,7 @@
             <p id="desc">To send a message to a WhatsApp contact without saving their number , after you enter the number phone by click send message This will open a new chat window with the specified phone number that you entered, allowing you to send a message without saving the number as a contact first.
             </p>
             <div>
-                <input type="text" id="phone" placeholder="Enter phone number" autocomplete="disabled">
+                <input type="tel" id="phone" placeholder="Enter phone number" autocomplete="disabled">
             </div>
             <h3 id="error">Phone number invalid</h3>
             <button id="send" onclick="send_message()">
@@ -42,6 +45,16 @@
 
         }, 1000);
     </script>
+      <script src="./style/build/js/intlTelInput.js"></script>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            preferredCountries: ["ma", "us", "fr"],
+            initialCountry: "ma",
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
     <script src="./app.js"></script>
 </body>
 </html>

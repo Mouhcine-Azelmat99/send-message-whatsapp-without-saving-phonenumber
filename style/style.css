@@ -50,9 +50,9 @@ input, button {
   margin: 25px 0;
 }
 .main input {
-  padding: 10px 20px;
+  padding: 10px 60px !important;
   font-size: 1.5rem;
-  width: 67%;
+  width: 138% !important;
   background: linear-gradient(77deg, rgb(7, 236, 181) 0%, rgb(99, 215, 99) 100%);
   border: #4cd137 1px #218c74;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -73,12 +73,11 @@ input, button {
   font-size: 1.3rem;
 }
 .main input:focus {
-  transform: scale(1.1);
-  border: 2px solid #192a56;
+  background-color: rgba(238, 238, 238, 0.9333333333) !important;
 }
 .main button {
   all: none;
-  width: 73.5%;
+  width: 80%;
   padding: 10px 20px;
   background: rgb(0, 203, 157);
   background: linear-gradient(77deg, rgb(0, 203, 157) 0%, rgb(76, 209, 55) 81%, rgb(60, 241, 31) 100%);
@@ -87,7 +86,6 @@ input, button {
   cursor: pointer;
   margin: 8px 0;
   border: 2px solid #192a56;
-  transition: 2s ease-out !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .main button:hover {
@@ -118,6 +116,7 @@ footer p {
   }
   .main {
     display: block;
+    margin-bottom: 40px;
   }
   .main img {
     display: none;
@@ -130,7 +129,7 @@ footer p {
     margin-bottom: 0px;
   }
   .main input {
-    width: 85%;
+    width: 96% !important;
   }
   #desc {
     display: none;
@@ -157,4 +156,16 @@ footer p {
   .loader {
     padding: 41% 30%;
   }
+}
+@media (max-width: 400px) {
+  .main {
+    min-height: 73vh;
+  }
+  .loader {
+    padding: 73% 26%;
+  }
+}
+.main .iti--allow-dropdown .iti__selected-flag {
+  border-right: 1px solid #000;
+  padding: 0 6px 0 15px;
 }/*# sourceMappingURL=style.css.map */
