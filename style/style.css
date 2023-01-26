@@ -159,14 +159,22 @@ footer p {
 }
 @media (max-width: 400px) {
   .main {
-    min-height: 73vh;
     padding: 10px 0;
+  }
+  .main input::-moz-placeholder {
+    font-size: 1rem;
+  }
+  .main input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .main input::placeholder {
+    font-size: 1rem;
   }
   .loader {
     padding: 73% 26%;
   }
   footer {
-    margin-top: 10px;
+    margin-top: 0px;
   }
 }
 .main .iti--allow-dropdown .iti__selected-flag {
