@@ -175,9 +175,14 @@ footer{
 @media (max-width: 400px) {
     .main{
         min-height: 73vh;
+        padding: 10px 0;
+        // margin: 0;
     }
     .loader{
         padding: 73% 26%;
+    }
+    footer{
+        margin-top: 10px;
     }
 }
 

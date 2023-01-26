@@ -1,14 +1,12 @@
 function send_message(){
-    let tel = document.getElementById("phone").value;
-    let btn =document.getElementById("send");
     let error =document.getElementById("error");
 
     let phone = phoneInput.getNumber();
-    if(/^[a-zA-Z]+$/.test(tel) || tel.length<8){
+    if(/^[a-zA-Z]+$/.test(phone) || phone.length<10){
       // variable is alphabetic
       error.style.display="block";
     }else{
       // variable is not alphabetic
-      window.open("https://wa.me/"+tel, "_blank");
+      window.open("https://wa.me/"+phone, "_blank");
     }
 }
