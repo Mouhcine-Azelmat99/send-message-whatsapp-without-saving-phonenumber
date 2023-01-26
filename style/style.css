@@ -170,11 +170,14 @@ footer p {
   .main input::placeholder {
     font-size: 1rem;
   }
+  .main button {
+    font-size: 1.3rem;
+  }
   .loader {
     padding: 73% 26%;
   }
   footer {
-    margin-top: 20px;
+    margin-top: 100px;
   }
 }
 .main .iti--allow-dropdown .iti__selected-flag {
