@@ -158,6 +158,9 @@ footer p {
   }
 }
 @media (max-width: 400px) {
+  body {
+    overflow-y: hidden;
+  }
   .main {
     padding: 10px 0;
   }
@@ -177,7 +180,7 @@ footer p {
     padding: 73% 26%;
   }
   footer {
-    margin-top: 100px;
+    margin-top: 102px;
   }
 }
 .main .iti--allow-dropdown .iti__selected-flag {

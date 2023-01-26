@@ -173,6 +173,9 @@ footer{
     }
 }
 @media (max-width: 400px) {
+    body{
+        overflow-y: hidden;
+    }
     .main{
         // min-height: 7  3vh;
         padding: 10px 0;
@@ -188,7 +191,7 @@ footer{
         padding: 73% 26%;
     }
     footer{
-        margin-top: 100px;
+        margin-top: 102px;
     }
 }
 
